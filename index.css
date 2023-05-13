@@ -1,0 +1,202 @@
+body {
+	background-image: url("./pexels-nicole-avagliano-2749481.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/* // */
+.container {
+	max-width: 600px; /* Increase the container width to accommodate all 5 boxes */
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+#searchForm {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#inputNow {
+	width: 200px;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #0056b3;
+}
+
+#cityName {
+	font-size: 32px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#tempValue {
+	font-size: 56px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.weather-forecast {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+	max-width: 600px; /* Increase the container width */
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+.forecast-container > div {
+	flex-basis: calc(40% - 20px);
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: center;
+	transition: transform 0.3s ease;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-container > div:nth-child(4),
+.forecast-container > div:nth-child(5) {
+	flex-basis: calc(40% - 20px);
+}
+
+.forecast-container img {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile View */
+@media screen and (max-width: 767px) {
+	.container {
+		max-width: 100%; /* Adjust the container width to fit the screen */
+		padding: 10px; /* Reduce the padding */
+	}
+
+	h1 {
+		font-size: 24px; /* Decrease the font size */
+		margin-bottom: 10px; /* Reduce the margin bottom */
+	}
+
+	#inputNow {
+		width: 100%; /* Adjust the input width to fit the container */
+	}
+
+	.btn {
+		margin-top: 10px; /* Add margin top to the search button */
+	}
+
+	#cityName {
+		font-size: 28px; /* Decrease the font size */
+		margin-bottom: 5px; /* Reduce the margin bottom */
+	}
+
+	#tempValue {
+		font-size: 48px; /* Decrease the font size */
+		margin-bottom: 15px; /* Reduce the margin bottom */
+	}
+
+	.weather-forecast {
+		padding: 10px; /* Reduce the padding */
+	}
+
+	.forecast-container {
+		display: grid; /* Use grid layout for the forecast container */
+		grid-template-columns: repeat(2, 1fr); /* Show two boxes per row */
+		grid-gap: 10px; /* Add gap between the boxes */
+	}
+
+	.forecast-container > div {
+		flex-basis: 100%; /* Adjust the width of forecast items to fit the grid */
+		margin-bottom: 10px; /* Add margin bottom to forecast items */
+	}
+
+	.forecast-container img {
+		width: 60px; /* Decrease the image size */
+		height: 60px; /* Decrease the image size */
+		margin-bottom: 5px; /* Reduce the margin bottom */
+	}
+
+	.forecast-temperature {
+		font-size: 12px; /* Decrease the font size */
+	}
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.container {
+		max-width: 80%; /* Adjust the container width to fit the screen */
+	}
+
+	h1 {
+		font-size: 30px; /* Decrease the font size */
+	}
+
+	#inputNow {
+		width: 250px; /* Adjust the input width to fit the container */
+	}
+
+	.forecast-container > div {
+		flex-basis: calc(
+			33.33% - 20px
+		); /* Adjust the width of forecast items to fit three items per row */
+	}
+}
