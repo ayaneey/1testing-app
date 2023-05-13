@@ -6,7 +6,7 @@ let weatherPressure = document.getElementById("weatherPressure");
 let weatherHumidity = document.getElementById("weatherHumidity");
 let weatherWind = document.getElementById("weatherWind");
 
-// API Key
+// API Key for OpenWeatherMap
 let APIKEY = "32ddcf69b981d2d26ae1ab0b60a837c2";
 
 // Get the return button element from the DOM
