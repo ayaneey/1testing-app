@@ -9,7 +9,7 @@ let weatherWind = document.getElementById("weatherWind");
 // API Key
 let APIKEY = "32ddcf69b981d2d26ae1ab0b60a837c2";
 
-// Get the return button element
+// Get the return button element from the DOM
 const returnButton = document.querySelector(".return-button");
 
 // Hide the return button initially
