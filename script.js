@@ -12,7 +12,7 @@ let APIKEY = "32ddcf69b981d2d26ae1ab0b60a837c2";
 // Get the return button element from the DOM
 const returnButton = document.querySelector(".return-button");
 
-// Hide the return button initially
+// Hide the return button initially when the page loads
 returnButton.style.display = "none";
 
 // Add an event listener to show the return button when the weather data is displayed in the second container
